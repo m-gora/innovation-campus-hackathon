@@ -1,5 +1,5 @@
 ---
-title : "Bosch IoT Campus Metaverse Hackathon
+title : "Bosch IoT Campus Metaverse Hackathon"
 description: "Get Hacking"
 lead: "Get Hacking"
 date: 2023-08-21T10:00:00+02:00
