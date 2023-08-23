@@ -20,7 +20,7 @@
         {{ range .Params.tracks }}
           <div class="col-lg-5">
             <h2 class="h4">{{ .title }}</h2>
-            <p>{{ .paragraph }}</p>
+            <p>{{ .paragraph | markdownify }}</p>
           </div>
         {{ end }}
       </div>
