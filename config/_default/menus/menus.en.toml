@@ -1,14 +1,11 @@
-
 [[main]]
   name = "Inspire"
   url = "/inspire/"
   weight = 10
 
-
 [[main]]
   name = "Friends of Hack"
   url = "/partners/"
-  identifier = "partners"
   weight = 20
 
 [[main]]
@@ -19,12 +16,10 @@
 [[main]]
   name = "Event Agenda"
   weight = 40
-  identifier = "agenda"
   url = "/agenda/"
 
 [[main]]
   name = "Get Help"
   weight = 50
-  identifier = "help"
   url = "/help/"
 

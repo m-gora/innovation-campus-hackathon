@@ -1,10 +1,11 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Bosch Digital"
+title = "BOSCH"
 titleSeparator = "-"
 titleAddition = "Metaverse Hackathon"
 description = "Information about the IoT Campus Metaverse Hackathon"
+logo = "Bosch_symbol_logo_white.svg"
 
 ## Documentation
 # docsVersion = "0.3"
@@ -65,7 +66,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = ""
+footer = "Copyright (c) Bosch.IO GmbH"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
@@ -76,16 +77,6 @@ alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
-# Edit Page
-# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
-repoHost = "GitHub"
-#repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
-docsRepoBranch = "master"
-docsRepoSubPath = ""
-editPage = false
-lastMod = false
-
 [sections]
   sectionNav = ["docs", "guides"]
 
@@ -93,7 +84,7 @@ lastMod = false
   lazySizes = true
   clipBoard = true
   instantPage = true
-  flexSearch = true
+  flexSearch = false
   searchSectionsShow = []
   searchSectionsIndex = []
   darkMode = true
