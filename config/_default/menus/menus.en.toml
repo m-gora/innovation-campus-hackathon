@@ -10,7 +10,7 @@
   weight = 20
 
 [[main]]
-  name = "Library"
+  name = "Hack Arsenal"
   weight = 30
   url = "/library/"
 

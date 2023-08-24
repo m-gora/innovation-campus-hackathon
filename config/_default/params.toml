@@ -66,7 +66,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Copyright (c) Bosch.IO GmbH"
+footer = "&copy; 2023 Bosch Digital, all rights reserved"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
