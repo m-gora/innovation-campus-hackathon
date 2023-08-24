@@ -10,14 +10,15 @@
   weight = 20
 
 [[main]]
+  identifier = "arsenal"
   name = "Hack Arsenal"
   weight = 30
-  url = "/library/"
+  url = "/arsenal/"
 
 [[main]]
   name = "Event Agenda"
   weight = 40
-  url = "/agenda/"
+  url = "https://www.bosch-digital.com/metaverse-lab-opening-and-hackathon-at-bosch-iot-campus-berlin/#:~:text=Our%20Hackathon%20Agenda"
 
 [[main]]
   name = "Get Help"
@@ -38,3 +39,17 @@
   name="Metaverse & AI"
   weight = 30
   url = "/inspire/ai"
+
+[[main]]
+  identifier = "hardware"
+  name = "Hardware"
+  weight = 10
+  url = "/arsenal/hardware"
+  parent = "arsenal"
+
+[[main]]
+  identifier = "software"
+  name = "Software"
+  weight = 10
+  url = "/arsenal/software"
+  parent = "arsenal"
