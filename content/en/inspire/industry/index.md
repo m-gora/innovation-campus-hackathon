@@ -1,5 +1,6 @@
 ---
 title: "Industrial Metaverse"
+image: "industry-card.png"
 description: ""
 lead: ""
 date: 2023-08-23T16:40:06+02:00

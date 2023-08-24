@@ -8,3 +8,5 @@ draft: false
 images: []
 type: docs
 ---
+
+Get inspired for your hack by having a look at the samples from the various hacking tracks.
