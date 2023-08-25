@@ -1,3 +1,0 @@
-Meta Quest Pro
-
-Released in October 2022, the Meta Quest Pro, marks Meta inaugural venture into mixed reality VR headsets, primarily aimed at enterprise customers. Boasting significant advancements over the consumer-centric Quest 2, the Quest Pro is Meta's pioneer in featuring eye tracking and dynamic foveated rendering. This technology enhances graphic rendering, delivering a superior level of detail compared to the Quest 2.
