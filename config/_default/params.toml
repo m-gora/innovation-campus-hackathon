@@ -1,11 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "BOSCH"
+title = "VRLab"
 titleSeparator = "-"
 titleAddition = "Metaverse Hackathon"
-description = "Information about the IoT Campus Metaverse Hackathon"
-logo = "Bosch_symbol_logo_white.svg"
+description = "Information about the Metaverse Hackathon"
 
 ## Documentation
 # docsVersion = "0.3"
@@ -66,7 +65,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "&copy; 2023 Bosch Digital, all rights reserved"
+footer = "You have never seen this page."
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"

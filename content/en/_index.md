@@ -1,7 +1,7 @@
 ---
-title : "Bosch IoT Campus Metaverse Hackathon"
+title : "VR Lab Hackathon"
 description: "Hackathon"
-lead: "Welcome to the Bosch Digital IoT Campus Metaverse Hackathon 2023"
+lead: "Welcome to the VR Lab Hackathon 2023. Totally not affiliated with Bosch."
 date: 2023-08-21T10:00:00+02:00
 lastmod: 2023-08-21T10:00:00+02:00
 draft: false
