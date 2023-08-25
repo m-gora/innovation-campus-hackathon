@@ -20,7 +20,9 @@
                   <div class="card-body">
                     <h5 class="card-title">{{ .Title }}</h5>
                     <p class="card-text">{{ .Content }}</p>
-                    <a href="#" class="btn btn-primary">{{ .Title }} SDK</a>
+                    {{ range .Params.links }}
+                      <a href="{{ .url }}" class="btn btn-primary" target="_blank">{{ .name }}</a>
+                    {{ end }}
                   </div>
                 </div>
               </div>

@@ -9,6 +9,12 @@ type: "hardware"
 resources:
 - name: "image"
   src: "questpro.webp"
+links:
+- name: "Meta Dev Portal"
+  url: "https://developer.oculus.com/"
+- name: "Get started w/ Unity"
+  url: "https://developer.oculus.com/documentation/unity/unity-gs-overview/"
+- name: "Get started w/ Unreal"
+  url: "https://developer.oculus.com/documentation/unreal/unreal-quick-start-guide-quest/"
 ---
-
-Released in October 2022, the Meta Quest Pro, marks Meta inaugural venture into mixed reality VR headsets, primarily aimed at enterprise customers. Boasting significant advancements over the consumer-centric Quest 2, the Quest Pro is Meta's pioneer in featuring eye tracking and dynamic foveated rendering. This technology enhances graphic rendering, delivering a superior level of detail compared to the Quest 2.
+Released in October 2022, the Meta Quest Pro is Meta's first try at mixed reality VR headsets, mainly made for business users. It has many improvements over the regular Quest 2. For the first time, Meta has added eye tracking and a special way to show graphics called dynamic foveated rendering in the Quest Pro. This new tech shows pictures with more detail than the Quest 2.
