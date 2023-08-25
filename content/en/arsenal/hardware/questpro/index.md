@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "questpro.webp"
+  src: "card.webp"
 links:
 - name: "Meta Dev Portal"
   url: "https://developer.oculus.com/"
