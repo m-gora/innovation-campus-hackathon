@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <div class="row">
+    <h1 class="text-center">{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
+    <div class="text-center">{{ .Content }}</div>
+      <div class="container-fluid">
+      {{ $currentSection := .CurrentSection }}
+      {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
+        {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
+          <div class="row">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-5 col-lg-5">
+                  {{ $image := .Resources.GetMatch "image" }}
+                  {{ with $image}}
+                    {{ $image := $image.Resize "x600" }}
+                    <img src="{{ .Permalink }}" class="img-fluid rounded-start" alt="...">
+                  {{ end }}
+                </div>
+                <div class="col-md-8 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    <p class="card-text">{{ .Content }}</p>
+                    <a href="#" class="btn btn-primary">{{ .Title }} SDK</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
