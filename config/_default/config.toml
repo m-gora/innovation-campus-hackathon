@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://black-smoke-049869f03.3.azurestaticapps.net/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
