@@ -1,6 +1,5 @@
 ---
 title: "Metaverse in Retail"
-image: "retail-card.png"
 description: ""
 lead: ""
 date: 2023-08-23T16:40:06+02:00
@@ -14,4 +13,7 @@ menu:
 weight: 999
 type: docs
 toc: true
+resources:
+- name: "image"
+  src: "retail-card.png"
 ---

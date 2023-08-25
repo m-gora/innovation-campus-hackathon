@@ -10,8 +10,7 @@
 					{{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
 						<div class="col">
 							<div class="card">
-								{{ $image := printf "images/%s" .Params.image }}
-								{{ with resources.Get $image }}
+								{{ with .Resources.GetMatch "image" }}
 									<img src="{{ .RelPermalink }}" alt="Square" class="card-img-top"/>
 								{{ end }}
 								<div class="card-body">

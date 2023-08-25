@@ -14,4 +14,7 @@ menu:
 weight: 999
 type: docs
 toc: true
+resources:
+- name: "image"
+  src: "industry-card.png"
 ---
