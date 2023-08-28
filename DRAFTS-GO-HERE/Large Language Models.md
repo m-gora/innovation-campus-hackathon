@@ -2,9 +2,7 @@
 
 ## Getting Started with LLM Applications: The Architecture Stack
 
-[**Architecture Stack for LLM Applications**](https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/?utm_source=tldrfounders)
-
-This article discusses the emerging architectures for large language model (LLM) applications. It presents a reference architecture for the LLM app stack, which includes the most common systems, tools, and design patterns used by AI startups and tech companies.
+[**Architecture Stack for LLM Applications**](https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/?utm_source=tldrfounders): This article discusses the emerging architectures for large language model (LLM) applications. It presents a reference architecture for the LLM app stack, which includes the most common systems, tools, and design patterns used by AI startups and tech companies.
 
 ## Current LLMs and How to Use Them
 
@@ -30,7 +28,7 @@ This article discusses the emerging architectures for large language model (LLM)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/techniques)
 - [Learn Prompting](https://learnprompting.org/docs/intro)
 
-### [Tools for Deploying LLMs](https://github.com/Hannibal046/Awesome-LLM#tools-for-deploying-llm)
+### Tools for Deploying LLMs
 
 - [FastChat](https://github.com/lm-sys/FastChat) - A distributed multi-model LLM serving system with web UI and OpenAI-compatible RESTful APIs.
 - [SkyPilot](https://github.com/skypilot-org/skypilot) - Run LLMs and batch jobs on any cloud. Get maximum cost savings, highest GPU availability, and managed execution -- all with a simple interface.
@@ -48,3 +46,4 @@ This article discusses the emerging architectures for large language model (LLM)
 - [Serge](https://github.com/serge-chat/serge) - a chat interface crafted with llama.cpp for running Alpaca models. No API keys, entirely self-hosted!
 - [Langroid](https://github.com/langroid/langroid) - Harness LLMs with Multi-Agent Programming
 - [Embedchain](https://github.com/embedchain/embedchain) - Framework to create ChatGPT like bots over your dataset.
+* Tooling list is sourced from [here](https://github.com/Hannibal046/Awesome-LLM#tools-for-deploying-llm) + own knowledge
