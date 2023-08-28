@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "questpro.webp"
+  src: "card.webp"
 links:
 - name: "Datasheet"
   url: "https://www.ultraleap.com/datasheets/ultraleap-3di-datasheet.pdf"
@@ -16,7 +16,7 @@ links:
   url: "https://www.ultraleap.com/developers/"
 ---
 Ultraleap 3Di Stereo Hand Tracking Camera is designed to be connected to any screen or kiosk. Together with Ultraleap's world-leading software, the device transforms displays into touchless, three-dimensional, immersive surfaces.
-
+{{< collapse id="ul3di" >}}
 Minimum system requirements:
 
 - Windows (R) 10, 64-bit
@@ -24,3 +24,4 @@ Minimum system requirements:
 - 5th Gen (supports AVX instructions)
 - 2GB RAM, USB 2.0. BrightSign XT1144, mains power
 - USB 2.0 Additional platforms
+{{</ collapse >}}

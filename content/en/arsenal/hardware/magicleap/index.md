@@ -6,6 +6,10 @@ lastmod: 2023-08-23T13:52:17+02:00
 draft: false
 images: []
 type: "hardware"
+resources:
+- name: "image"
+  src: "card.jpg"
+
 links:
 - name: "Magicleap Dev Portal"
   url: "https://ml2-developer.magicleap.com/"

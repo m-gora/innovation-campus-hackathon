@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "quest.jpg"
+  src: "card.webp"
 
 links:
 - name: "Pico Dev Portal"

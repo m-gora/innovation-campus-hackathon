@@ -16,10 +16,10 @@
                     <img src="{{ .Permalink }}" class="img-fluid rounded-start" alt="...">
                   {{ end }}
                 </div>
-                <div class="col-md-8 col-lg-8">
+                <div class="col-md-11 col-lg-11">
                   <div class="card-body">
-                    <h5 class="card-title">{{ .Title }}</h5>
-                    <p class="card-text">{{ .Content }}</p>
+                    <h3 class="card-title">{{ .Title }}</h3>
+                    {{ .Content | replaceRE "<p>" "<p class=\"card-text\">" | safeHTML }}
                     {{ range .Params.links }}
                       <a href="{{ .url }}" class="btn btn-primary" target="_blank">{{ .name }}</a>
                     {{ end }}

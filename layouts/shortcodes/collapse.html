@@ -1,0 +1,8 @@
+<div class="collapse" id="{{ .Get "id" }}">
+  {{ .Inner | markdownify }}
+</div>
+<p class="d-inline-flex gap-1">
+  <a data-bs-toggle="collapse" href="#{{ .Get "id" }}" aria-expanded="false" aria-controls="{{ .Get "id" }}">
+    more...
+  </a>
+</p>
