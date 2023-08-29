@@ -2,6 +2,8 @@
   {{ $options := (dict "targetPath" "main.css" "enableSourceMap" true "includePaths" (slice "node_modules")) -}}
   {{ $css := resources.Get "css/frontend-kit.css" -}}
   <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
+  {{ $css2 := resources.Get "css/custom.css" -}}
+  <link rel="stylesheet" href="{{ $css2.Permalink | relURL }}">
 {{ else -}}
   {{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed" "includePaths" (slice "node_modules")) -}}
   {{ $css := resources.Get "css/frontend-kit.css" | postCSS (dict "config" "config/postcss.config.js") -}}

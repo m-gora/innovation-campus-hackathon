@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "card.webp"
+  src: "card.jpeg"
 links:
 - name: "Datasheet"
   url: "https://www.ultraleap.com/datasheets/Leap_Motion_Controller_Datasheet.pdf"

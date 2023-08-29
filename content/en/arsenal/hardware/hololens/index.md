@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "card.webp"
+  src: "card.jpg"
 
 links:
 - name: "Mixed Reality w/ Unity"

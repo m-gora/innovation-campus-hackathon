@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "card.jpg"
+  src: "card.avif"
 
 links:
 - name: "Meta Dev Portal"

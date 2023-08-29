@@ -1,0 +1,11 @@
+.tile-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-gap: 10px;
+}
+
+.tile-item {}
+
+.o-footer-space {
+  margin-top: 2rem;
+}
