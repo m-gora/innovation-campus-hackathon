@@ -53,3 +53,19 @@
   weight = 10
   url = "/arsenal/software"
   parent = "arsenal"
+
+[[footer]]
+  name = "Corporate information"
+  url = "https://www.bosch-digital.com/imprint/"
+
+[[footer]]
+  name = "Legal notice"
+  url = "https://www.bosch-digital.com/legal-notice/"
+
+[[footer]]
+  name = "Data protection notice"
+  url = "https://www.bosch-digital.com/data-protection-notice/"
+
+[[footer]]
+  name = "Privacy Settings"
+  url = "https://www.bosch-digital.com/#show-privacy-settings"
