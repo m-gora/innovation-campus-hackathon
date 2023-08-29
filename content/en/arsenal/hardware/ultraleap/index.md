@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "card.webp"
+  src: "card.jpg"
 links:
 - name: "Datasheet"
   url: "https://www.ultraleap.com/datasheets/ultraleap-3di-datasheet.pdf"

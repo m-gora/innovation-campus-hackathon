@@ -1,0 +1,43 @@
+{{ define "main" }}
+  {{ $currentSection := .CurrentSection }}
+  <h1>{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
+  <div class="a-text">{{ .Content }}</div>
+  <div class="tile-wrapper">
+    {{ range $i, $e := where .Site.RegularPages.ByTitle "Section" .Section }}
+    {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
+      <div class="a-tile tile-item -secondary">
+        <a
+          href="{{ .RelPermalink }}"
+          aria-label="Link for Tile with Image on a Secondary Background"
+          class="a-tile__link"
+        >
+        {{ with .Resources.GetMatch "image" }}
+          <figure class="a-image">
+            <div class="a-image__ratioWrapper">
+              <img
+                src="{{ .RelPermalink }}"
+                alt=""
+              />
+            </div>
+          </figure>
+        {{ end }}
+          <div class="a-text" style="padding:2rem">
+            <span class="-size-s" style="display:block;margin-bottom:0.5rem">
+              {{ .Section | humanize }}
+            </span>
+            <h3 class="-size-xl" style="margin-bottom:0.5rem;margin-top:0">
+              {{ .Title }}
+              <i
+                class="a-icon ui-ic-inline-right-bold"
+                title="inline-right-bold"
+                style="margin-left:0.5rem;font-size:24px;vertical-align:baseline"
+              ></i>
+            </h3>
+            <p class="-size-m" style="margin:0">{{ .Summary }}</p>
+          </div>
+        </a>
+      </div>
+    {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

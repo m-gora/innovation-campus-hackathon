@@ -1,5 +1,5 @@
 ---
-title: "Metaverse & AI"
+title: "whatever case"
 description: ""
 lead: ""
 date: 2023-08-23T16:40:06+02:00
@@ -13,9 +13,6 @@ menu:
 weight: 999
 type: docs
 toc: true
-resources:
-- name: "image"
-  src: "ai-card.png"
 ---
 
 ### Introduction
@@ -35,14 +32,10 @@ Here are some inspiring examples of how AI technology can fuel the development o
 1. **Personalized Immersive Environments:** AI algorithms can analyze user preferences, behaviors, and interactions in real time to dynamically adjust the virtual environment. This creates personalized experiences where the Metaverse tailors itself to each user, enhancing engagement and immersion.
 
 2. **Smart NPCs and Avatars:** AI-driven non-player characters (NPCs) and avatars can exhibit lifelike behavior, adapting their responses based on user interactions and context. This lends a sense of realism and depth to virtual worlds, making interactions more meaningful.
-   
-   ![Alt text](image.png)
 
 3. **Realistic Physics and Simulations:** AI-powered physics engines can simulate realistic interactions between objects and characters within the Metaverse. This allows for the creation of intricate virtual ecosystems and realistic simulations of real-world scenarios.
    
 4. **Generative Content Creation:** AI can generate vast amounts of content, including art, music, literature, and even entire virtual landscapes. This empowers creators in the Metaverse to quickly generate diverse and unique content, enriching the overall experience.
-   
-   ![Alt text](image-1.png)
 
 5. **Conversational AI and Social Interaction:** AI-driven chatbots and conversational agents enable dynamic interactions between users and the virtual environment. This can include engaging in natural language conversations, providing information, and offering assistance.
 
