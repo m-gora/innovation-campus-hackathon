@@ -7,13 +7,6 @@
     <div class="o-footer__top">
       <div class="o-footer__claim">Invented for life</div>
       <ul class="o-footer__links">
-        {{ range .Site.Menus.footer -}}
-        <li>
-          <div class="a-link a-link--integrated">
-            <a href="{{ .URL | relURL }}" target="_self"><span>{{ .Name }}</span></a>
-          </div>
-        </li>
-        {{ end }}
       </ul>
       <div class="o-footer__share">
         <button
@@ -60,6 +53,15 @@
     </div>
     <hr class="a-divider" />
     <div class="o-footer__bottom">
+      <ul class="o-footer__links">
+        {{ range .Site.Menus.footer -}}
+        <li>
+          <div class="a-link a-link--integrated">
+            <a href="{{ .URL }}" target="_blank"><span>{{ .Name }}</span></a>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
       <div class="o-footer__copyright">
         &copy; Bosch.IO Gmbh 2023, all rights reserved
       </div>
