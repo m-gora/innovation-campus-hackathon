@@ -6,26 +6,15 @@ date: 2023-08-21T10:00:00+02:00
 lastmod: 2023-08-21T10:00:00+02:00
 draft: false
 images: []
+resources:
+- name: "image"
+  src: "cover.jpg"
 ---
 <div class="e-container">
-  <div class="m-text-image">
-    <div class="m-text-image__order-wrapper">
-      <figure class="a-image">
-        <div class="a-image__ratioWrapper">
-          <img
-            src="/images/likeabosch.jpg"
-            srcset="
-              https://frok.ui.bosch.tech/cdn/example-image-400w.jpg   400w,
-              https://frok.ui.bosch.tech/cdn/example-image-800w.jpg   800w,
-              https://frok.ui.bosch.tech/cdn/example-image-1600w.jpg 1600w
-            "
-            alt="Lorem ipsum dolor sit amet"
-          />
-        </div>
-      </figure>
-      <div class="a-text">
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+  <br />
+  <div class="a-text">
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
@@ -118,7 +107,5 @@ images: []
             </div>             
           </td>          
         </tr>
-      </table>      
-    </div>
-  </div>
+      </table>  
 </div>

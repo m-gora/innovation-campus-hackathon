@@ -5,10 +5,6 @@
     {{ range $i, $e := where .Site.RegularPages.ByTitle "Section" .Section }}
     {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
       <div class="a-tile tile-item -secondary">
-        <a
-          href="{{ .RelPermalink }}"
-          class="a-tile__link"
-        >
         {{ with .Resources.GetMatch "image" }}
           <figure class="a-image">
             <div class="a-image__ratioWrapper">
@@ -28,7 +24,6 @@
             </h3>
             <p class="-size-m" style="margin:0">{{ .Description }}</p>
           </div>
-        </a>
       </div>
     {{ end }}
     {{ end }}

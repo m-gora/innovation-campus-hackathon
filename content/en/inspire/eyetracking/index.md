@@ -1,6 +1,7 @@
 ---
-title: "Industrial Metaverse"
-description: ""
+title: "Eye Tracking"
+description: "some brief text explaining this thing"
+summary: "#vr #ar #questpro #magicleap2"
 lead: ""
 date: 2023-08-23T16:40:06+02:00
 lastmod: 2023-08-23T16:40:06+02:00
@@ -15,5 +16,5 @@ type: docs
 toc: true
 resources:
 - name: "image"
-  src: "industry-card.png"
+  src: "eyetracking.png"
 ---
