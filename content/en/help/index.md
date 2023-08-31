@@ -1,11 +1,27 @@
 ---
-title: "Help"
+title: "Get Help"
 description: ""
 date: 2023-08-23T13:52:25+02:00
 lastmod: 2023-08-23T13:52:25+02:00
 draft: false
 images: []
 ---
+<div class="e-container">
+  <figure class="a-image">
+    <div class="a-image__ratioWrapper">
+      <img
+        src="/images/banner_help.jpg"
+        alt="Lorem ipsum dolor sit amet"
+      />
+    </div>
+    <figcaption>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor.
+    </figcaption>
+  </figure>
+</div>
+
+
 There are various ways to get help during the hackathon.
 For vendor or hack track specific questions please refer to the discord channels below.
 

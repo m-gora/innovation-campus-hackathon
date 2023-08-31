@@ -1,12 +1,23 @@
 ---
-title: "Inspire"
+title: "Get Inspired"
 description: ""
 lead: ""
 date: 2022-01-25T14:41:21+01:00
 lastmod: 2022-01-25T14:41:21+01:00
 draft: false
 images: []
-type: tiles
 ---
-
-Get inspired for your hack by having a look at the samples from the various hacking tracks.
+<div class="e-container">
+  <figure class="a-image">
+    <div class="a-image__ratioWrapper">
+      <img
+        src="/images/banner_inspired.jpg"
+        alt="Lorem ipsum dolor sit amet"
+      />
+    </div>
+    <figcaption>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor.
+    </figcaption>
+  </figure>
+</div>

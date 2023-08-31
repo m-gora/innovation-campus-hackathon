@@ -41,10 +41,9 @@ images: []
           <td>
             <div class="a-tile">
               <a
-                href="/#"
+                href="/inspire"
                 aria-label="Link for Default Tile with Primary Background"
                 class="a-tile__link"
-                target="_blank"
               >
                 <div class="a-text" style="padding:2rem">
                   <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
@@ -58,10 +57,9 @@ images: []
           <td>
             <div class="a-tile">
               <a
-                href="/#"
+                href="/partners"
                 aria-label="Link for Default Tile with Primary Background"
                 class="a-tile__link"
-                target="_blank"
               >
                 <div class="a-text" style="padding:2rem">
                   <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">Friends of Hack</h3>
@@ -76,7 +74,6 @@ images: []
                 href="/#"
                 aria-label="Link for Default Tile with Primary Background"
                 class="a-tile__link"
-                target="_blank"
               >
                 <div class="a-text" style="padding:2rem">
                   <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
@@ -90,7 +87,7 @@ images: []
           <td>
             <div class="a-tile">
               <a
-                href="/#"
+                href="https://www.bosch-digital.com/metaverse-lab-opening-and-hackathon-at-bosch-iot-campus-berlin/#:~:text=Our%20Hackathon%20Agenda"
                 aria-label="Link for Default Tile with Primary Background"
                 class="a-tile__link"
                 target="_blank"
@@ -107,10 +104,9 @@ images: []
           <td>
             <div class="a-tile">
               <a
-                href="/#"
+                href="/help"
                 aria-label="Link for Default Tile with Primary Background"
                 class="a-tile__link"
-                target="_blank"
               >
                 <div class="a-text" style="padding:2rem">
                   <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
