@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "card.jpeg"
+  src: "card.jpg"
 links:
 - name: "Developer Portal"
   url: "https://developer.vive.com/eu/hardware/tracker3/"
