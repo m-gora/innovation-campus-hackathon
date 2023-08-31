@@ -14,6 +14,14 @@
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}"{{ if eq .Site.Params.options.scrollSpy true }} data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -90%" data-bs-smooth-scroll="true" tabindex="0"{{ end }}>
     {{ partial "header/header.html" . }}
+    {{ if eq .Kind "page" -}}
+      <div> this is a page</div>
+    
+    {{ else }}
+          <div> this is not a page {{ .Kind }}</div>
+    {{ end -}}
+
+
     <div class="e-container">
       {{ block "main" . }}{{ end }}
     </div>
