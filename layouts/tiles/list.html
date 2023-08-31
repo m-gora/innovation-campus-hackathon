@@ -1,6 +1,5 @@
 {{ define "main" }}
   {{ $currentSection := .CurrentSection }}
-  <h1>{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
   <div class="a-text">{{ .Content }}</div>
   <div class="tile-wrapper">
     {{ range $i, $e := where .Site.RegularPages.ByTitle "Section" .Section }}
