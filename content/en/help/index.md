@@ -9,25 +9,32 @@ resources:
 - name: "image"
   src: "banner.jpg"
 ---
-There are various ways to get help during the hackathon.
-For vendor or hack track specific questions please refer to the discord channels below.
+We'd like your hackathon experience to be as smooth as possible. If you've any queries or need help, we've got you covered!
+If the pages on this site do not answer your questions, you can reach out to our hack assistants and partners on site.
 
-## Discord Channels
-- [SynergyXR](https://discord.com/channels/1136239538746957894/1138035004618838066)
-- [nVidia](https://discord.com/channels/1136239538746957894/1138035025577787454)
-- [Retail](https://discord.com/channels/1136239538746957894/1138020052264828968)
-- [Industrial Metaverse](https://discord.com/channels/1136239538746957894/1138020089384415292)
-- [Metaverse & AI](https://discord.com/channels/1136239538746957894/1138020136083796021)
+Alternatively, we have a discord server setup so that you can reach out to our hack assistants as well as your fellow
+hackers.
+      <p class="-size-m" style="margin:0">
+        <br />
+        <a href="https://discord.com/channels/1136239538746957894" target="_blank">
+          <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df290f5892d944_full_logo_black_RGB.svg" width="200" />
+        </a>
+      </p>
 
 ## Hack Coaches
 Hack Coaches are your domain experts in your tracks. Contact them if you need domain expertise.
 
-- Hack Coach 1
-- Hack Coach 2
-- Hack Coach 3
+3 column
+
+photo | name | hack track
+
 
 ## Hack Ninjas
-Hack Ninjas are technical experts. Contact them if you need technical support
+
+3 column
+
+photo | name | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
 
 ## Librarians
-Librarians are handing out Hardware.
+
+photo | name
