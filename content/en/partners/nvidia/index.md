@@ -38,7 +38,7 @@ resources:
       </p>
       <br />      
       <p class="-size-m" style="margin:0">
-        Need Help?
+        <b>Need Help?</b>
         <br />
         <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df290f5892d944_full_logo_black_RGB.svg" width="200" />
       </p>
