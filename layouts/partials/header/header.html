@@ -1,52 +1,183 @@
-{{ if .Site.Params.alert -}}
-  {{ partial "header/alert.html" . }}
-{{ end -}}
-
-{{ if eq .Site.Params.options.navbarSticky true -}}
-<div class="sticky-top">
-{{ end -}}
-
-<div class="header-bar"></div>
-
-<header class="navbar navbar-expand-lg navbar-light doks-navbar">
-  <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-lg-nowrap" aria-label="Main navigation">
-
-    <a class="navbar-brand order-0" href="{{ .Site.BaseURL | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-      {{ .Site.Params.Title }}
-    </a>
-
-    {{ if (in .Site.Params.sections.sectionNav .Section) -}}
-    <button class="btn btn-link order-0 ms-auto d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-    </button>
-    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="header-bar"></div>
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">{{ i18n "browse" }} {{ .Section  }}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <aside class="doks-sidebar mt-n3">
-          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
-            {{ partial "sidebar/docs-menu.html" . }}
-          </nav>
-        </aside>
+<header class="o-header">
+  <div class="o-header__top-container">
+    <div class="e-container">
+      <div class="o-header__top">
+        <a href="/" class="o-header__logo" aria-label="Bosch Logo">
+          <svg
+            width="108px"
+            height="24px"
+            viewBox="0 0 108 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="bosch-logo-text"
+              d="M78.19916,15.03735c0,3.46057-3.1618,5.1535-6.12445,5.1535c-3.41083,0-5.17847-1.29462-6.57263-2.96265 l2.51453-2.48962c1.07056,1.36926,2.46472,2.0415,4.0083,2.0415c1.29462,0,2.14105-0.62244,2.14105-1.56848 c0-0.99585-0.77179-1.31952-2.83813-1.74274l-0.54773-0.12451c-2.48962-0.52283-4.53113-1.91699-4.53113-4.75519 c0-3.112,2.53943-4.97925,5.87549-4.97925c2.8382,0,4.65564,1.21991,5.77594,2.48962l-2.46472,2.43988 c-0.82831-0.91748-2.00061-1.44946-3.23651-1.46893c-0.89624,0-1.91699,0.42328-1.91699,1.46893 c0,0.97095,1.07056,1.31946,2.41492,1.59332l0.54773,0.12451C75.51038,10.73029,78.24896,11.42737,78.19916,15.03735z  M64.80499,11.92529c0,4.65558-2.66394,8.29047-7.26971,8.29047c-4.58093,0-7.26971-3.63489-7.26971-8.29047 c0-4.63068,2.68878-8.29047,7.26971-8.29047C62.14105,3.63483,64.80499,7.29462,64.80499,11.92529z M60.92114,11.92529 c0-2.46472-1.1452-4.48132-3.38586-4.48132s-3.36102,1.9917-3.36102,4.48132s1.12036,4.50623,3.36102,4.50623 S60.92114,14.43982,60.92114,11.92529z M87.06226,16.43152c-1.74274,0-3.56018-1.44397-3.56018-4.60583 c0-2.81323,1.69293-4.38171,3.46057-4.38171c1.39423,0,2.21576,0.64728,2.8631,1.76764l3.18671-2.11621 c-1.59338-2.41492-3.48547-3.43567-6.09961-3.43567c-4.78009,0-7.36926,3.70953-7.36926,8.19086 c0,4.70544,2.86304,8.39008,7.31946,8.39008c3.13696,0,4.63074-1.09546,6.24902-3.43567l-3.21167-2.16602 C89.25311,15.68463,88.55603,16.43152,87.06226,16.43152z M48.97095,15.46057c0,2.66388-2.43982,4.40662-4.92944,4.40662H35.9502 V4.0332h7.44397c2.8382,0,4.9046,1.44397,4.9046,4.35681c0.01666,1.43036-0.85675,2.72058-2.19086,3.23651 C46.10791,11.65143,48.97095,12.29877,48.97095,15.46057z M39.80914,10.25726h2.83813 c0.02155,0.00134,0.04309,0.00226,0.06464,0.00269c0.81476,0.01575,1.48804-0.6319,1.50385-1.44666 c0.00342-0.0567,0.00342-0.11353,0-0.17017c-0.047-0.77802-0.71576-1.37061-1.49377-1.32361h-2.88794L39.80914,10.25726z  M44.76349,14.98755c0-0.92114-0.67218-1.54358-2.09131-1.54358h-2.81323v3.11206h2.88794 C43.91699,16.55603,44.76349,16.13275,44.76349,14.98755z M103.64313,4.03326v5.82568H98.8382V4.03326h-4.15771v15.83398h4.15771 v-6.24896h4.80493v6.24896h4.15771V4.03326H103.64313z"
+            />
+            <path
+              id="bosch-logo-anker"
+              d="M12,0C5.37256,0,0,5.37256,0,12c0,6.62738,5.37256,12,12,12s12-5.37262,12-12C23.99646,5.37402,18.62598,0.00354,12,0z  M12,22.87964C5.99133,22.87964,1.12036,18.00867,1.12036,12S5.99133,1.1203,12,1.1203S22.87964,5.99133,22.87964,12 C22.87354,18.0061,18.0061,22.87354,12,22.87964z M19.50293,7.05475c-0.66852-1.01306-1.53552-1.88-2.54858-2.54852h-0.82159 v4.10785H7.89209V4.50623H7.04565c-4.13873,2.73114-5.27972,8.30029-2.54858,12.43896 c0.66852,1.01306,1.53552,1.88007,2.54858,2.54858h0.84644v-4.10791h8.24066v4.10791h0.82159 C21.09308,16.76257,22.23407,11.19348,19.50293,7.05475z M6.74689,17.87549c-3.24493-2.88354-3.5379-7.85168-0.65436-11.09668 c0.20508-0.23077,0.42358-0.44928,0.65436-0.65436V17.87549z M16.13275,14.24066H7.89209V9.73444h8.24066V14.24066z  M17.84827,17.25549c-0.18768,0.2088-0.38629,0.40747-0.59515,0.59509v-2.48962V8.61407V6.12445 C20.49121,9.03387,20.75763,14.0174,17.84827,17.25549z"
+            />
+          </svg>
+        </a>
+        <div class="o-header__quicklinks">
+          <button type="button" class="a-button a-button--integrated" style="display: none;">
+            <i
+              class="a-icon a-button__icon boschicon-bosch-ic-login"
+              title="Lorem Ipsum"
+            ></i>
+            <span class="a-button__label">Login</span>
+          </button>
+          <button type="button" class="a-button a-button--integrated" style="display: none;">
+            <i
+              class="a-icon a-button__icon boschicon-bosch-ic-chat"
+              title="Lorem Ipsum"
+            ></i>
+            <span class="a-button__label">Contact</span>
+          </button>
+        </div>
+        <div class="o-header__search" style="display: none;">
+          <form class="m-search-form" autocomplete="off">
+            <div class="a-text-field a-text-field--search">
+              <input type="search" id="search-null" placeholder="Search" />
+              <button type="submit" class="a-text-field__icon-search">
+                <i class="a-icon ui-ic-search" title="LoremIpsum"></i>
+              </button>
+              <button type="button" class="a-text-field__icon-close">
+                <i class="a-icon ui-ic-close-small" title="LoremIpsum"></i>
+              </button>
+            </div>
+          </form>
+          <button
+            type="button"
+            class="a-button a-button--integrated o-header__search-open"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i
+              class="a-icon a-button__icon boschicon-bosch-ic-search"
+              title="Lorem Ipsum"
+            ></i>
+            <span class="a-button__label">Search</span>
+          </button>
+        </div>
+        <button
+          type="button"
+          class="a-button a-button--integrated o-header__menu-trigger"
+          aria-haspopup="true"
+          aria-label="Toggle Main Navigation"
+        >
+          <i class="o-header__menu-trigger-icon a-icon a-button__icon">
+            <span class="o-header__menu-trigger-icon-bar"></span>
+            <span class="o-header__menu-trigger-icon-bar"></span>
+            <span class="o-header__menu-trigger-icon-bar"></span>
+            <span class="o-header__menu-trigger-icon-bar"></span>
+          </i>
+          <span class="o-header__menu-trigger-label a-button__label">Menu</span>
+        </button>
       </div>
     </div>
-    {{ end -}}
-
-
-    <button class="btn btn-menu order-2 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-    </button>
-    <div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
-      <div class="header-bar d-lg-none"></div>
-      <div class="offcanvas-header d-lg-none">
-        <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relLangURL }}">{{ .Site.Params.Title }}</a></h2>
-        <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
-      </div>
-      <div class="offcanvas-body p-4 p-lg-0">
-        <ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto">
+  </div>
+  <div class="o-header__search_suggestions_container">
+    <div class="e-container">
+      <ul class="a-search-suggestions">
+        <li class="a-search-suggestions__item">
+          <a href="#" class="a-search-suggestions__result-link" tabindex="-1">
+            <em>Product XYZ</em>
+            Lorem ipsum dolor
+          </a>
+        </li>
+        <li class="a-search-suggestions__item">
+          <a href="#" class="a-search-suggestions__result-link" tabindex="-1">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr Product XYZ
+            another line can be very long or very short, however when text
+            breaks and the Product XYZ is mentioned again,
+            <em>we should highlight this</em>
+          </a>
+        </li>
+        <li class="a-search-suggestions__item">
+          <a href="#" class="a-search-suggestions__result-link" tabindex="-1">
+            Lorem ipsum
+            <em>Product XYZ</em>
+          </a>
+        </li>
+        <li class="a-search-suggestions__item">
+          <a href="#" class="a-search-suggestions__result-link" tabindex="-1">
+            <em>Product XYZ</em>
+            Lorem ipsum dolor
+          </a>
+        </li>
+        <li
+          class="a-search-suggestions__item a-search-suggestions__results-link"
+        >
+          <div class="a-link -icon">
+            <a href="/" target="_self" tabindex="-1">
+              <span>All</span>
+              <span>
+                Results
+                <i
+                  class="a-icon ui-ic-nosafe-lr-right-small"
+                  title="nosafe-lr-right-small"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="e-container">
+    <div class="o-header__meta">
+      <ol class="o-header__breadcrumbs">
+        <li style="display: none;">
+          <div class="a-link -icon">
+            <a href="/" target="_self">
+              <span>News and</span>
+              <span>
+                Stories
+                <i
+                  class="a-icon ui-ic-nosafe-lr-right-small"
+                  title="nosafe-lr-right-small"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </li>
+        <li style="display: none;">
+          <div class="a-link -icon">
+            <a href="/" target="_self">
+              <span>Internet of</span>
+              <span>
+                Things
+                <i
+                  class="a-icon ui-ic-nosafe-lr-right-small"
+                  title="nosafe-lr-right-small"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </li>
+        <li style="display: none;">
+          <div class="a-link -icon">
+            <a href="/" target="_self">
+              <span>Page</span>
+              <span>
+                Name
+                <i
+                  class="a-icon ui-ic-nosafe-lr-right-small"
+                  title="nosafe-lr-right-small"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </li>
+      </ol>
+      <span class="o-header__subbrand">Bosch Digital</span>
+    </div>
+  </div>
+  <div class="o-header__navigation-container">
+    <div class="e-container">
+      <nav class="o-header__navigation" aria-label="Main navigation">
+        <ul class="o-header__navigation-first-level" role="menu">
           {{- $current := . -}}
           {{- $section := $current.Section -}}
           {{ range .Site.Menus.main -}}
@@ -55,145 +186,88 @@
             {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors" "categories" "tags")) -}}
             {{ if .HasChildren }}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  {{ .Name }}
-                  <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink">
+              <li class="o-header__navigation-first-level-item">
+                <button
+                  type="button"
+                  class="a-button a-button--integrated -without-icon o-header__navigation-trigger"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <span class="a-button__label">{{ .Name }}</span>
+                </button>
+                <i
+                  class="a-icon o-header__navigation-arrow ui-ic-right"
+                  title="right"
+                ></i>
+                <ul
+                  class="o-header__navigation-sub-level"
+                  role="menu"
+                  aria-hidden="true"
+                >
+                  <button
+                    type="button"
+                    class="a-button a-button--integrated -without-label o-header__navigation-close-trigger"
+                    aria-label="sub menu trigger"
+                  >
+                    <i
+                      class="a-icon a-button__icon boschicon-bosch-ic-arrow-left"
+                      title="Lorem Ipsum"
+                    ></i>
+                  </button>
                   {{ range .Children -}}
-                  {{- $active = eq .Name $current.Title -}}
-                    <li>
-                      <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                    <li
+                      class="o-header__navigation-sub-level-item o-header__navigation-sub-level-item-overview"
+                    >
+                      <div
+                        class="a-link a-link--integrated o-header__navigation-trigger"
+                      >
+                        <a href="{{ .URL | relURL }}" target="_self" tabindex="-1">
+                          <span>{{ .Name }}</span>
+                        </a>
+                      </div>
                     </li>
-                  {{ end -}}
+                  {{ end }}
                 </ul>
+              {{ else }}
+              <li class="o-header__navigation-sub-level-item">
+                <div
+                  class="a-link a-link--integrated o-header__navigation-trigger"
+                >
+                  <a href="{{ .URL | relURL }}" target="_self" tabindex="-1">
+                    <span>{{ .Name }}</span>
+                  </a>
+                </div>
               </li>
-            {{ else }}
-              <li class="nav-item">
-                <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-              </li>
+              {{ end }}
             {{ end }}
-          {{ end -}}
+            </ul>
+          </li>
+          <li class="o-header__language-selector">
+            <div class="m-language-selector" style="display: none;">
+              <div class="a-link -icon">
+                <a
+                  href="https://www.bosch.com/websites-worldwide/"
+                  target="_blank"
+                >
+                  <i class="a-icon boschicon-bosch-ic-globe" title="globe"></i>
+                  <span>Bosch Global</span>
+                </a>
+              </div>
+              <div class="a-dropdown">
+                <select
+                  id="demo"
+                  aria-label="here goes the aria label for the dropwdown"
+                >
+                  <option value='"Deutsch"'>Deutsch</option>
+                  <option value='"English"'>English</option>
+                  <option value='"Französisch"'>Französisch</option>
+                </select>
+              </div>
+            </div>
+          </li>
         </ul>
-
-        {{- $showFlexSearch := .Site.Params.options.flexSearch }}
-        {{- if $showFlexSearch }}
-        {{- if and (isset .Site.Params.options "searchsectionsshow") (not (eq .Site.Params.options.searchSectionsShow "ALL")) }}
-        {{- $showFlexSearch = or (eq (len .Site.Params.options.searchSectionsShow) 0) (in .Site.Params.options.searchSectionsShow .Section) (and .IsHome (in .Site.Params.options.searchSectionsShow "HomePage")) }}
-        {{- end }}
-        {{- end }}
-
-        {{ if $showFlexSearch -}}
-        <hr class="text-black-50 my-4 d-lg-none">
-        <form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2">
-          <input id="search" class="form-control is-search" type="search" placeholder="{{ i18n "search-text" }}" aria-label="{{ i18n "search-text" }}" autocomplete="off">
-          <div id="suggestions" class="shadow bg-white rounded d-none"></div>
-        </form>
-        {{ end -}}
-
-        <hr class="text-black-50 my-4 d-lg-none">
-        <ul class="nav flex-column flex-lg-row">
-          {{ range .Site.Menus.social -}}
-            <li class="nav-item">
-              <a class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 d-lg-none">{{ .Name | safeHTML }}</small></a>
-            </li>
-          {{ end -}}
-        </ul>
-
-        {{ if .Site.Params.options.darkMode -}}
-        <hr class="text-black-50 my-4 d-lg-none">
-        <button id="mode" class="btn btn-link" type="button" aria-label="Toggle user interface mode">
-          <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
-          <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
-        </button>
-        {{ end -}}
-
-        {{ if eq .Site.Params.options.multilingualMode true -}}
-        <hr class="text-black-50 my-4 d-lg-none">
-        <div class="dropdown">
-          <button class="btn btn-doks-light dropdown-toggle" id="doks-languages" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-            {{ .Site.Params.languageName }}
-            <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby="doks-languages">
-
-            <li><a class="dropdown-item current" aria-current="true" href="{{ .RelPermalink }}">{{ .Site.Language.LanguageName }}</a></li>
-
-            <li><hr class="dropdown-divider"></li>
-
-            {{ if .IsTranslated -}}
-              {{ range .Translations }}
-                <li><a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
-              {{ end -}}
-            {{ else -}}
-              {{ range .Site.Languages -}}
-                {{ if ne $.Site.Language.Lang .Lang }}
-                  <li><a class="dropdown-item" rel="alternate" href="{{ .Lang | relLangURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
-                {{ end -}}
-              {{ end -}}
-            {{ end -}}
-              <!--
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/docs/contributing/how-to-contribute/">Help Translate</a></li>
-              -->
-          </ul>
-        </div>
-        {{ end -}}
-
-        {{ if eq .Site.Params.options.docsVersioning true -}}
-        <hr class="text-black-50 my-4 d-lg-none">
-        <div class="dropdown">
-          <button class="btn btn-doks-light dropdown-toggle" id="doks-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" aria-label="Toggle version menu">
-            <span class="d-none">Doks</span> v{{ .Site.Params.docsVersion }}
-            <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby="doks-versions">
-            <li><a class="dropdown-item current" aria-current="true" href="/docs/{{ .Site.Params.docsVersion }}/prologue/introduction/">Latest ({{ .Site.Params.docsVersion }}.x)</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/docs/0.2/prologue/introduction/">v0.2.x</a></li>
-            <li><a class="dropdown-item" href="/docs/0.1/prologue/introduction/">v0.1.x</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
-          </ul>
-        </div>
-        {{ end -}}
-      </div>
+      </nav>
     </div>
-  </nav>
-</header>
-
-{{ if eq .Site.Params.options.navbarSticky true }}
-</div>
-{{ end -}}
-
-{{ if eq .Section "docs" -}}
-<div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}">
-  <aside class="doks-sidebar">
-    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-      {{ partial "sidebar/docs-menu.html" . }}
-    </nav>
-  </aside>
-</div>
-
-{{ else if ne .CurrentSection .FirstSection -}}
-<!--
-<nav class="doks-subnavbar py-2 sticky-lg-top d-lg-none" aria-label="Secondary navigation">
-  <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-lg-center">
-    <span class="navbar-text ms-0">{{ .Section | humanize }}</span>
-    <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-    </button>
   </div>
-</nav>
--->
-
-<div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}">
-  <aside class="doks-sidebar">
-    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
-      {{ partial "sidebar/docs-menu.html" . }}
-    </nav>
-  </aside>
-</div>
-{{ end -}}
+</header>

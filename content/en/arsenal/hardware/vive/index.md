@@ -8,7 +8,7 @@ images: []
 type: "hardware"
 resources:
 - name: "image"
-  src: "card.jpg"
+  src: "xrelite.jpg"
 links:
 - name: "Get Started"
   url: "https://developer.vive.com/resources/getting-started-with-xr-elite/"

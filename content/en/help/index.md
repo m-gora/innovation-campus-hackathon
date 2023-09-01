@@ -1,12 +1,16 @@
 ---
-title: "Help"
+title: "Get Help"
 description: ""
 date: 2023-08-23T13:52:25+02:00
 lastmod: 2023-08-23T13:52:25+02:00
 draft: false
 images: []
-type: docs
+resources:
+- name: "image"
+  src: "banner.jpg"
 ---
+There are various ways to get help during the hackathon.
+For vendor or hack track specific questions please refer to the discord channels below.
 
 ## Discord Channels
 - [SynergyXR](https://discord.com/channels/1136239538746957894/1138035004618838066)

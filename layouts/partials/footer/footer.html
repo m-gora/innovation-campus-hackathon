@@ -1,17 +1,69 @@
-<footer class="footer text-muted">
-  <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}">
-    <div class="row">
-      <div class="col-lg-8 order-last order-lg-first">
-        <ul class="list-inline">
-          <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
-        </ul>
+<footer class="o-footer o-footer-space">
+  <div class="o-footer__search-container -secondary">
+    <div class="e-container">
+    </div>
+  </div>
+  <div class="e-container">
+    <div class="o-footer__top">
+      <div class="o-footer__claim">Invented for life</div>
+      <ul class="o-footer__links">
+      </ul>
+      <div class="o-footer__share">
+        <button
+          type="button"
+          class="a-button a-button--integrated -without-label"
+          aria-label="share button"
+        >
+          <i
+            class="a-icon a-button__icon boschicon-bosch-ic-facebook"
+            title="Lorem Ipsum"
+          ></i>
+        </button>
+        <button
+          type="button"
+          class="a-button a-button--integrated -without-label"
+          aria-label="share button"
+        >
+          <i
+            class="a-icon a-button__icon boschicon-bosch-ic-youtube"
+            title="Lorem Ipsum"
+          ></i>
+        </button>
+        <button
+          type="button"
+          class="a-button a-button--integrated -without-label"
+          aria-label="share button"
+        >
+          <i
+            class="a-icon a-button__icon boschicon-bosch-ic-linkedin"
+            title="Lorem Ipsum"
+          ></i>
+        </button>
+        <button
+          type="button"
+          class="a-button a-button--integrated -without-label"
+          aria-label="share button"
+        >
+          <i
+            class="a-icon a-button__icon boschicon-bosch-ic-twitter"
+            title="Lorem Ipsum"
+          ></i>
+        </button>
       </div>
-      <div class="col-lg-8 order-first order-lg-last text-lg-end">
-        <ul class="list-inline">
-          {{ range .Site.Menus.footer -}}
-            <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-          {{ end -}}
-        </ul>
+    </div>
+    <hr class="a-divider" />
+    <div class="o-footer__bottom">
+      <ul class="o-footer__links">
+        {{ range .Site.Menus.footer -}}
+        <li>
+          <div class="a-link a-link--integrated">
+            <a href="{{ .URL }}" target="_blank"><span>{{ .Name }}</span></a>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+      <div class="o-footer__copyright">
+        &copy; Bosch.IO Gmbh 2023, all rights reserved
       </div>
     </div>
   </div>
