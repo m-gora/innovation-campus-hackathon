@@ -1,6 +1,6 @@
 ---
 title: "Combine Physical with the Virtual"
-description: "some brief text explaining this thing"
+description: " This fusion of real-world elements with digital information or experiences can enhance productivity, entertainment, education, and more."
 summary: "#vr #ar #ai #llm"
 lead: ""
 date: 2023-08-23T16:40:06+02:00

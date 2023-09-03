@@ -1,6 +1,6 @@
 ---
 title: "Eye Tracking"
-description: "some brief text explaining this thing"
+description: "Use cases include Natural User Interfaces, Accessibility, Gaze-Triggered Interactions, Immersive Storytelling, Health and Well-being Monitoring and Security"
 summary: "#vr #ar #questpro #magicleap2"
 lead: ""
 date: 2023-08-23T16:40:06+02:00

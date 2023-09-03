@@ -1,6 +1,6 @@
 ---
 title: "Gamified Digital Reality"
-description: "some brief text explaining this thing"
+description: "Gaming, digital reality, and social interaction to create an immersive and interactive experience for users. This concept merges several emerging technologies and trends to offer a wide range of use cases and opportunities. Use-cases include Entertainment and Gaming, Social Interaction and Education and Training"
 summary: "#vr #ar #ai #llm"
 lead: ""
 date: 2023-08-23T16:40:06+02:00

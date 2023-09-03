@@ -1,6 +1,6 @@
 ---
 title: "AI-Powered Avatars"
-description: "some brief text explaining this thing"
+description: "Avatars, which are digital representations of individuals or characters enhanced by artificial intelligence, offer a unique and dynamic way to interact with users."
 summary: "#vr #ar #ai #llm"
 lead: ""
 date: 2023-08-23T16:40:06+02:00
