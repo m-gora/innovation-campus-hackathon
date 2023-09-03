@@ -1,7 +1,7 @@
 ---
-title: "Augmented Environments with AR"
+title: "Gamified Digital Reality"
 description: "some brief text explaining this thing"
-summary: "#ar #questpro #magicleap2"
+summary: "#vr #ar #ai #llm"
 lead: ""
 date: 2023-08-23T16:40:06+02:00
 lastmod: 2023-08-23T16:40:06+02:00
