@@ -13,19 +13,9 @@ resources:
 <div class="e-container">
   <br />
   <div class="a-text">
-    <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-      </div>
-      <table>
+    <p>Get ready to ignite your creativity, unleash your coding skills, and collaborate with fellow innovators for an unforgettable hacking experience. We are thrilled to have you join us for this exciting journey into the world of the Metaverse and AI.</p>
+  </div>
+  <table>
         <tr>
           <td>
             <div class="a-tile">
