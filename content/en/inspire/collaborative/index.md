@@ -1,6 +1,6 @@
 ---
 title: "Collaborative Work"
-description: "some brief text explaining this thing"
+description: "The practice of individuals or groups working together in a shared virtual environment, often enabled by advanced technologies like augmented reality (AR), virtual reality (VR), and blockchain. "
 summary: "#vr #ar"
 lead: ""
 date: 2023-08-23T16:40:06+02:00

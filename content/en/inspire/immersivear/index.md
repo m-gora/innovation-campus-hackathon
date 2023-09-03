@@ -1,6 +1,6 @@
 ---
 title: "Augmented Environments with AR"
-description: "some brief text explaining this thing"
+description: "Augmented Reality (AR) is a technology that overlays digital information, such as images, videos, 3D models, or text, onto the real-world environment. Augmented environments with AR have a wide range of use-cases across various industries and applications"
 summary: "#ar #questpro #magicleap2"
 lead: ""
 date: 2023-08-23T16:40:06+02:00
