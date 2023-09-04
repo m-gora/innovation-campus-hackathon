@@ -8,6 +8,8 @@ images: []
 resources:
 - name: "image"
   src: "banner.jpg"
+- name: "denis"
+  src: "Denis_picture.jpg"
 ---
 We'd like your hackathon experience to be as smooth as possible. If you've any queries or need help, we've got you covered!
 If the pages on this site do not answer your questions, you can reach out to our hack assistants and partners on site.
@@ -31,14 +33,11 @@ photo | name | hack track
 
 ## Hack Ninjas
 
-<p class="-size-m" style="margin:0">
-    <br />
-    <a href="" target="_blank">
-      <img src="./Denis_picture.jpeg" width="150" />
-    </a>
-</p> <b>Denis Kramer</b> | Expertise: #AI, #Python, #Azure ML, #Azure Devops
-<br />
-<br />
+{{< columns >}}
+  {{< profile picture="Denis_picture.jpeg" name="Denis Kramer" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+{{</ columns >}}
+
 Photo | Person | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
 
 ## Librarians

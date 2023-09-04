@@ -18,21 +18,21 @@
     {{ if or (eq .Kind "page") (eq .Kind "section") -}}
     {{ $currentSection := .CurrentSection }}    
       <h1>{{ .Title }}</h1>
+      {{ with .Resources.GetMatch "image" }}
       <figure class="a-image">
         <div class="a-image__ratioWrapper" style="padding-top: 21%">
-          {{ with .Resources.GetMatch "image" }}
           <img src="{{ .RelPermalink }}" />
-          {{ end }}
         </div>
       </figure>
+      {{ end }}
     {{ else -}}
+    {{ with .Resources.GetMatch "image" }}
       <figure class="a-image">
         <div class="a-image__ratioWrapper">
-          {{ with .Resources.GetMatch "image" }}
           <img src="{{ .RelPermalink }}" />
-          {{ end }}
         </div>
       </figure>
+      {{ end }}
     {{ end -}}
     </div>
 

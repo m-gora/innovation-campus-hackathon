@@ -19,8 +19,6 @@ links:
   url: "https://ts.thrustmaster.com/download/pub/webupdate/TFlightHotas/2022_TFHT_1.exe"
 ---
 The T.Flight HOTAS is a high-precision joystick and a throttle set is intended for all designated pilots who want a two-handed set for flight simulation.Fully compatible with all flight simulation games for PC, the plug and play HOTAS features a unique ergonomic design that allows it to adapt to any type of game: dogfights, civil or commercial flights, space adventures, etc.
-{{< collapse id="hotas" >}}
 Minimum system requirements:
 
 - Windows 10, 11
-{{</ collapse >}}
