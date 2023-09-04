@@ -1,6 +1,6 @@
 ---
-title: "Hand Tracking"
-description: "some brief text explaining this thing"
+title: "Gesture and Emotion Recognition"
+description: "AI-powered computer vision can recognize users' gestures and emotions, translating real-world movements and expressions into virtual actions. This enhances the sense of embodiment within the virtual space"
 summary: "#vr #ar #questpro #magicleap2 #ultraleap"
 lead: ""
 date: 2023-08-23T16:40:06+02:00

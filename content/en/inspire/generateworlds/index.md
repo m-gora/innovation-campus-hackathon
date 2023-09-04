@@ -1,6 +1,6 @@
 ---
 title: "Generate Virtual Worlds"
-description: "some brief text explaining this thing"
+description: "AI can create procedurally generated virtual worlds with intricate landscapes, cities, and ecosystems. This speeds up the development process while offering a diverse range of experiences for users which allows creators in the Metaverse to quickly generate diverse and unique content, enriching the overall experience"
 summary: "#vr #ar #ai #llm"
 lead: ""
 date: 2023-08-23T16:40:06+02:00

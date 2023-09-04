@@ -31,9 +31,15 @@ photo | name | hack track
 
 ## Hack Ninjas
 
-3 column
-
-photo | name | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
+<p class="-size-m" style="margin:0">
+    <br />
+    <a href="" target="_blank">
+      <img src="./Denis_picture.jpeg" width="150" />
+    </a>
+</p> <b>Denis Kramer</b> | Expertise: #AI, #Python, #Azure ML, #Azure Devops
+<br />
+<br />
+Photo | Person | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
 
 ## Librarians
 

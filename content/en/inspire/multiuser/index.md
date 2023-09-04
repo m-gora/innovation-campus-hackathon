@@ -1,6 +1,6 @@
 ---
 title: "Multi User Interaction"
-description: "some brief text explaining this thing"
+description: "AI-driven chatbots and conversational agents enable dynamic interactions between users and the virtual environment. This can include engaging in natural language conversations, providing information, and offering assistance."
 summary: "#vr #ar #questpro #magicleap2"
 lead: ""
 date: 2023-08-23T16:40:06+02:00
