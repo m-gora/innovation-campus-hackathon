@@ -20,4 +20,5 @@ Siemens AG (Siemens) is a technology company. Its operations span electrificatio
 
 Need Help?
 
-![Discord](https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df290f5892d944_full_logo_black_RGB.svg =x200)
+<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df290f5892d944_full_logo_black_RGB.svg" width="200">
+
