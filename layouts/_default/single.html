@@ -1,5 +1,5 @@
 {{ define "main" }}
   <article class="a-text">
-    {{ .Content }}
+    {{ .Content | replaceRE "<table>" "<table class=\"m-table\">" | safeHTML }}
   </article>
 {{ end }}

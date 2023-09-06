@@ -18,7 +18,7 @@ Alternatively, we have a discord server setup so that you can reach out to our h
 hackers.
       <p class="-size-m" style="margin:0">
         <br />
-        <a href="https://discord.com/channels/1136239538746957894" target="_blank">
+        <a href="https://discord.gg/cJzJJ3m6" target="_blank">
           <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df290f5892d944_full_logo_black_RGB.svg" width="200" />
         </a>
       </p>
@@ -41,5 +41,8 @@ photo | name | hack track
 Photo | Person | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
 
 ## Librarians
+
+{{< columns >}}
+{{</ columns >}}
 
 photo | name
