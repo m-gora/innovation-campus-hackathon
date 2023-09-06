@@ -3,7 +3,6 @@
   url = "/inspire/"
   weight = 10
 
-
 [[main]]
   name = "Friends of Hack"
   url = "/partners/"
@@ -50,7 +49,7 @@
 [[main]]
   identifier = "software"
   name = "Software"
-  weight = 10
+  weight = 20
   url = "/arsenal/software"
   parent = "arsenal"
 
