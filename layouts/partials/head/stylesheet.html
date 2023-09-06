@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="{{ $css2.Permalink | relURL }}">
 {{ else -}}
   {{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed" "includePaths" (slice "node_modules")) -}}
-  {{ $css := resources.Get "css/frontend-kit.css" | postCSS (dict "config" "config/postcss.config.js") -}}
-  {{ $secureCSS := $css | resources.Fingerprint "sha512" -}}
-  <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}" crossorigin="anonymous">
+  {{ $css := resources.Get "css/frontend-kit.css" -}}
+  <link rel="stylesheet" href="{{ $css.Permalink }}">
+  {{ $css2 := resources.Get "css/custom.css" -}}
+  <link rel="stylesheet" href="{{ $css2.Permalink | relURL }}">
 {{ end -}}
 <noscript><style>img.lazyload { display: none; }</style></noscript>

@@ -1,7 +1,27 @@
 .tile-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  grid-gap: 10px;
+  grid-gap: 1rem;
+  grid-template-columns: none;
+}
+
+@media(min-width: 40em) {
+  .\32 -col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .\33 -col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 80em) {
+  .\32 -col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .\33 -col {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .tile-item {}
