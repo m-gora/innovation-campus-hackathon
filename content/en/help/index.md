@@ -8,8 +8,6 @@ images: []
 resources:
 - name: "image"
   src: "banner.jpg"
-- name: "denis"
-  src: "Denis_picture.jpg"
 ---
 We'd like your hackathon experience to be as smooth as possible. If you've any queries or need help, we've got you covered!
 If the pages on this site do not answer your questions, you can reach out to our hack assistants and partners on site.
@@ -26,23 +24,45 @@ hackers.
 ## Hack Coaches
 Hack Coaches are your domain experts in your tracks. Contact them if you need domain expertise.
 
-3 column
+{{< columns >}}
+  {{< profile picture="Denis_picture.jpeg" name="Alexander von Gaisberg-Helfenberg" >}}
+    Hack Track: Retail
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Christian Hergt" >}}
+    Hack Track: Industrial Metaverse
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Christian Kersten" >}}
+    Hack Track: Metaverse & AI
+  {{</profile >}}
+{{</ columns >}}
 
-photo | name | hack track
 
 
 ## Hack Ninjas
 
 {{< columns >}}
+  {{< profile picture="Denis_picture.jpeg" name="Yousof Alsatom" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Zubair Mohammad" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
   {{< profile picture="Denis_picture.jpeg" name="Denis Kramer" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Pavel Simo" category="#3DDev" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Maximilian Rost" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Min Park" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Emre Kesici" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Gunnar Beister" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Rahul Lao" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
+  {{</profile >}}
+  {{< profile picture="Marco.jpg" name="Marco Gora" category="#Azure #DevOps #Architecture #LLM" >}}
+  {{</profile >}}
+  {{< profile picture="Denis_picture.jpeg" name="Kim Braunholz" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
   {{</profile >}}
 {{</ columns >}}
 
 Photo | Person | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
-
-## Librarians
-
-{{< columns >}}
-{{</ columns >}}
-
-photo | name
