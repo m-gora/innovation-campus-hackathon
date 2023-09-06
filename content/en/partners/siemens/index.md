@@ -8,9 +8,11 @@ images: []
 resources:
 - name: "logo"
   src: "siemens.png"
+- name: "logo-banner"
+  src: "siemens-banner.png"
 ---
 
-![siemens.png](logo)
+![siemens.png](logo-banner)
 
 Siemens AG (Siemens) is a technology company. Its operations span electrification, automation, and digitalization fields. The company designs, develop, and manufactures products, and installs complex systems and projects. Tecnomatix is a comprehensive portfolio of software solutions that help you digitalize manufacturing and the process of turning innovative ideas and raw materials into transformative products.
 - [Tecnomatix - Process Simulate](https://labopeninghackathonfiles.blob.core.windows.net/industrial-metaverse/Tecnomatix_2307_Setups.zip?sp=r&st=2023-09-04T16:05:38Z&se=2023-09-15T00:05:38Z&spr=https&sv=2022-11-02&sr=b&sig=j1jaaHPrqr1ZhkbCQ32qLH786im50yCnTQRJbLYOgD8%3D)
