@@ -25,6 +25,9 @@
         </div>
       </figure>
       {{ end }}
+      {{ with .Description }}
+      <p>{{ . }}</p>
+      {{end}}
     {{ else -}}
     {{ with .Resources.GetMatch "image" }}
       <figure class="a-image">

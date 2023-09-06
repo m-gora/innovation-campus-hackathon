@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ $currentSection := .CurrentSection }}
   <div class="a-text">{{ .Content }}</div>
-  <div class="tile-wrapper">
+  <div class="tile-wrapper 3-col">
     {{ range $i, $e := where .Site.RegularPages.ByTitle "Section" .Section }}
     {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
       <div class="a-tile tile-item">
