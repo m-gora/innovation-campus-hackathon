@@ -12,5 +12,7 @@ resources:
 links:
 - name: "Get Started"
   url: "https://developer.vive.com/resources/getting-started-with-xr-elite/"
+- name: "XR-Elite app for Wi-Fi and Cable Streaming"
+  url: "https://business.vive.com/eu/solutions/streaming/"
 ---
 The HTC Vive XR Elite, released in March 2023, is a virtual reality headset by HTC. Utilising pancake optics, the device achieves a compact design, enhancing comfort for users. This headset incorporates several features from HTC's prior standalone devices, including inside-out tracked controllers and an actively cooled chipset.
