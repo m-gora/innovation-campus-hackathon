@@ -1,3 +1,3 @@
-<button type="button" onclick="window.location.href='{{ .Get "url" }}';" class="a-button a-button--primary -without-icon">
+<button type="button" onclick="window.open('{{ .Get "url" }}', '_blank');" class="a-button a-button--primary -without-icon">
   <span class="a-button__label">{{ .Get "name" }}</span>
 </button>

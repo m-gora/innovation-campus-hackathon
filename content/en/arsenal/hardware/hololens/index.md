@@ -10,8 +10,7 @@ resources:
 - name: "image"
   src: "card.jpg"
 
-links:
-- name: "Mixed Reality w/ Unity"
-  url: "https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr%2CD365%2Chl2"
 ---
 The Microsoft HoloLens 2, released by Microsoft in November 2019, is a standalone augmented reality headset, eliminating the need for an external PC. Weighing in at 556g, it's on the heavier side but compensates with a high horizontal field of view of 43°. Although it has a modest refresh rate of 60 Hz, the device benefits from not requiring external base stations for operation.
+
+{{< button url="https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-development-overview?tabs=arr%2CD365%2Chl2" name="Mixed Reality w/ Unity" >}}
