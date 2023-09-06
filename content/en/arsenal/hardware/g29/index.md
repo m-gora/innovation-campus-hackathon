@@ -9,12 +9,6 @@ type: "hardware"
 resources:
 - name: "image"
   src: "card.jpg"
-
-links:
-- name: "Developer Lab"
-  url: "https://www.logitechg.com/en-us/innovation/developer-lab.html"
-- name: "VR Steering Guide"
-  url: "https://readyvrone.com/hardware/best-vr-steering-wheels-guide/"
 ---
 The Logitech G29 Driving Force Racing Wheel is a high-precision racing wheel racing enthusiasts.
 At a substantial 10.24 inches, the wheel, wrapped in genuine hand-stitched leather, offers both luxury and durability.
@@ -28,3 +22,7 @@ Minimum system requirements:
 - USB port
 - Games that support Logitech® force feedback racing wheel
 
+  
+  
+{{< button url="https://www.logitechg.com/en-us/innovation/developer-lab.html" name="Developer Lab" >}}
+{{< button url="https://readyvrone.com/hardware/best-vr-steering-wheels-guide/" name="VR Steering Guide" >}}

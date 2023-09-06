@@ -64,5 +64,3 @@ Hack Coaches are your domain experts in your tracks. Contact them if you need do
   {{< profile picture="Denis_picture.jpeg" name="Kim Braunholz" category="#AI, #Python, #Azure ML, #Azure Devops" >}}
   {{</profile >}}
 {{</ columns >}}
-
-Photo | Person | expertise (e.g. ai, metaverse, unity, c#, python etc as hashtags)
