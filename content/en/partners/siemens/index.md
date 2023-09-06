@@ -10,7 +10,7 @@ resources:
   src: "siemens.png"
 ---
 
-![siemens.png](siemens.png)
+![siemens.png](logo)
 
 Siemens AG (Siemens) is a technology company. Its operations span electrification, automation, and digitalization fields. The company designs, develop, and manufactures products, and installs complex systems and projects. Tecnomatix is a comprehensive portfolio of software solutions that help you digitalize manufacturing and the process of turning innovative ideas and raw materials into transformative products.
 
