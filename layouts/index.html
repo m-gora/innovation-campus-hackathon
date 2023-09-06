@@ -1,14 +1,3 @@
 {{ define "main" }}
-<div class="e-container">
-  <div class="a-text">
-  </div>
-  <div class="e-container">
-    {{ $column := split .Content "<!-- Column -->" }}
-    {{ range $column}}
-    <article class="tile-item">
-      {{ . | markdownify }}
-    </article>
-    {{ end }}
-  </div>
-</div>
+  {{ .Content }}
 {{ end }}

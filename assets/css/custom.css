@@ -2,6 +2,7 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: none;
+  margin-top: 1rem;
 }
 
 @media(min-width: 40em) {
@@ -12,6 +13,10 @@
   .\33 -col {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .\35 -col {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media(min-width: 80em) {
@@ -21,6 +26,10 @@
   
   .\33 -col {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .\35 -col {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 

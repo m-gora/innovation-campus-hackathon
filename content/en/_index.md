@@ -10,92 +10,23 @@ resources:
 - name: "image"
   src: "cover.jpg"
 ---
-<div class="e-container">
-  <br />
-  <div class="a-text">
-    <p>Get ready to ignite your creativity, unleash your coding skills, and collaborate with fellow innovators for an unforgettable hacking experience. We are thrilled to have you join us for this exciting journey into the world of the Metaverse and AI.</p>
-  </div>
-  <table>
-        <tr>
-          <td>
-            <div class="a-tile">
-              <a
-                href="/inspire"
-                aria-label="Link for Default Tile with Primary Background"
-                class="a-tile__link"
-              >
-                <div class="a-text" style="padding:2rem">
-                  <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
-                    Get Inspired
-                  </h3>
-                  <p class="-size-m" style="margin:0">What's Metaverse and AI? Need some ideas and inspiration?</p>
-                </div>
-              </a>
-            </div>                        
-          </td>
-          <td>
-            <div class="a-tile">
-              <a
-                href="/partners"
-                aria-label="Link for Default Tile with Primary Background"
-                class="a-tile__link"
-              >
-                <div class="a-text" style="padding:2rem">
-                  <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">Friends of Hack</h3>
-                  <p class="-size-m" style="margin:0">We've invited some friends over and they brought along some cool technology</p>
-                </div>
-              </a>
-            </div>             
-          </td>
-          <td>
-            <div class="a-tile">
-              <a
-                href="/#"
-                aria-label="Link for Default Tile with Primary Background"
-                class="a-tile__link"
-              >
-                <div class="a-text" style="padding:2rem">
-                  <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
-                    Hack Arsenal
-                  </h3>
-                  <p class="-size-m" style="margin:0">Our library of cool hardware and software available to you</p>
-                </div>
-              </a>
-            </div>             
-          </td>
-          <td>
-            <div class="a-tile">
-              <a
-                href="https://www.bosch-digital.com/metaverse-lab-opening-and-hackathon-at-bosch-iot-campus-berlin/#:~:text=Our%20Hackathon%20Agenda"
-                aria-label="Link for Default Tile with Primary Background"
-                class="a-tile__link"
-                target="_blank"
-              >
-                <div class="a-text" style="padding:2rem">
-                  <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
-                    Agenda
-                  </h3>
-                  <p class="-size-m" style="margin:0">The Low-down over the next 3 days</p>
-                </div>
-              </a>
-            </div>             
-          </td>
-          <td>
-            <div class="a-tile">
-              <a
-                href="/help"
-                aria-label="Link for Default Tile with Primary Background"
-                class="a-tile__link"
-              >
-                <div class="a-text" style="padding:2rem">
-                  <h3 class="-size-l" style="margin-bottom:0.5rem;margin-top:0">
-                    Get Help
-                  </h3>
-                  <p class="-size-m" style="margin:0">Need help with anything?</p>
-                </div>
-              </a>
-            </div>             
-          </td>          
-        </tr>
-      </table>  
-</div>
+
+Get ready to ignite your creativity, unleash your coding skills, and collaborate with fellow innovators for an unforgettable hacking experience. We are thrilled to have you join us for this exciting journey into the world of the Metaverse and AI.
+
+{{< columns amount="5" >}}
+  {{< profile name="Get Inspired" >}}
+    What's Metaverse and AI? Need some ideas and inspiration?
+  {{</ profile >}}
+  {{< profile name="Partners" >}}
+    We've invited some friends over and they brought along some cool technology
+  {{</ profile >}}
+  {{< profile name="Hack Arsenal" >}}
+    Our library of cool hardware and software available to you
+  {{</ profile >}}
+  {{< profile name="Agenda" >}}
+    The Low-down over the next 3 days
+  {{</ profile >}}
+  {{< profile name="Get Help" >}}
+    Need help with anything?
+  {{</ profile >}}
+{{</ columns >}}
